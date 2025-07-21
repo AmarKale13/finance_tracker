@@ -118,5 +118,91 @@ Layer	Technologies & Key Packages
 - **Dev Tools :	Git, Node.js, npm**
 
 ## Demo Video
+You can watch the demo video here:  
+[![Watch the Demo](assets/thumbnail.png)](https://raw.githubusercontent.com/AmarKale13/finance_tracker/main/assets/demo_FinTrac.mp4)
+
+## ✨ Features
+
+### ✅ User Authentication
+- Secure **registration** and **login**
+- Uses **JWT (JSON Web Token)** for protected routes
+- Passwords securely stored using hashing
+
+---
+
+### 💰 Transaction Management
+- **Add**, **view**, and **delete** transactions
+- Support for both **income** and **expenses**
+- Upload pdf of transactions
+- Each transaction includes:
+  - Date
+  - Amount
+  - Type (Income / Expense)
+  - Category
+  - Optional note
+
+---
+
+### 📤 Upload & Parse Receipts
+- Upload **image (JPG/PNG)**
+- Automatically extract:
+  - Amount
+  - Date
+  - Category
+  - Note
+- Uses:
+  - `tesseract.js` for OCR (image receipts)
+  - `pdf-parse` for digital PDFs
+
+---
+
+### 📊 Dashboard & Analytics
+- Interactive **Dashboard** includes:
+  - Total Income, Expense, and Net balance (hover-reveal cards)
+  - Line chart showing trends over time
+  - Pie charts for category-wise income & expenses
+
+---
+
+### 📆 Date Range Selection
+- Filter dashboard analytics by **custom time range**
+- Dynamically updates charts & summaries
+
+---
+
+### 📈 Reports Section
+- Monthly & Quarterly summaries:
+  - Total Income, Expense, Net Balance
+- Category breakdown for each month/quarter
+
+---
+
+### 📥 Upload Bulk Transactions
+- Upload **PDF bank statements** in tabular format via sidebar
+- Each row becomes a transaction in MongoDB
+
+---
+
+### 🧾 Paginated Transaction List
+- Paginated transaction history
+- Each entry shown as a responsive **card**
+- Built-in delete functionality
+
+---
+
+### ⚙️ Modern Tech Stack
+- **React** frontend with `react-router-dom` for SPA routing
+- **Express + MongoDB** backend with `mongoose`
+- `axios` for API calls
+- `recharts` for data visualization
+- `multer`, `pdf-parse`, and `tesseract.js` for file handling & parsing
+
+---
+
+### 🧪 Developer Friendly
+- Organized folder structure
+- Uses `.env` for environment variables
+- Development via `nodemon`, `concurrently` for multi-service startup
+- Easily extendable for future features like budgets, recurring transactions, etc.
 
 
