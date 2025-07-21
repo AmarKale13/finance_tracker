@@ -26,9 +26,72 @@ Follow these steps to run the project locally.
 # Replace with your repo URL
 git clone https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
 cd <YOUR_REPO>
+
+
+## 2. Configure Environment Variables
+
+In the project root, create a file named `.env`:
+
+```ini
 # MongoDB
 MONGO_URI=mongodb://127.0.0.1:27017/Personal_financial_tracking
 
-# JSON Web Token
+# JWT configuration
 JWT_SECRET=your_jwt_secret_here
 JWT_EXPIRES_IN=2h
+
+## 3. Install Dependencies
+#a) Server (project root)
+````bash
+npm install
+
+Installs backend libraries:
+
+express — HTTP framework
+
+mongoose — MongoDB ODM
+
+dotenv — env var loader
+
+jsonwebtoken — JWT auth
+
+multer — file uploads
+
+pdf-parse — extract text from PDFs
+
+tesseract.js — OCR for images
+
+cors — Cross‑origin requests
+
+nodemon (dev) — auto‑restart server
+
+# Client (React app)
+````bash
+cd client
+npm install
+
+Installs frontend libraries:
+
+react, react-dom — UI
+
+react-router-dom — routing
+
+axios — HTTP client
+
+recharts — charts
+
+## 4. Available Scripts
+From the project root:
+
+Start the backend
+````bash
+npm run server
+# or
+npx nodemon server.js
+
+Start the frontend
+````bash
+cd client
+npm start
+
+
