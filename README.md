@@ -118,7 +118,7 @@ Layer	Technologies & Key Packages
 - **Dev Tools :	Git, Node.js, npm**
 
 ## Demo Video
-You can watch the demo video here:  
+You can watch the demo video here (Please click on Thumbnail to download the demo video):  
 [![Watch the Demo](assets/thumbnail.png)](https://raw.githubusercontent.com/AmarKale13/finance_tracker/main/assets/demo_FinTrac.mp4)
 
 ## ✨ Features
