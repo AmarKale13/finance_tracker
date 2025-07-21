@@ -1,0 +1,72 @@
+/* filters row */
+.filters {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.filters input {
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* summary cards */
+.summary {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  flex: 1;
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.summary-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.summary-card p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.summary-card.income p {
+  color: #16a34a;
+}
+
+.summary-card.expense p {
+  color: #dc2626;
+}
+
+.summary-card.net p {
+  color: #333;
+}
+.txn-and-upload {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+/* Ensure the upload box stays narrow */
+.receipt-upload-form {
+  margin-top: 9rem;
+  width: 250px;
+}

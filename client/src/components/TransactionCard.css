@@ -1,0 +1,82 @@
+/* Container to center cards */
+.card {
+  display: flex;
+  gap: 24px;
+}
+
+/* Base card style */
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 340px;
+  /* min-width: 260px; */ 
+  height: 220px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  color: #333;
+  /* padding: 21rem; */
+}
+
+/* Expanding circle on hover */
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #00838d;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.card1:hover:before {
+  transform: scale(21);
+}
+
+/* Headings and text */
+.card1 h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.card1 p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.card1 p.small {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Delete button */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}

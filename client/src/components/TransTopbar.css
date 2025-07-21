@@ -1,0 +1,24 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 10px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topbar-title {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.account-icon {
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.account-icon:hover {
+  color: #e74c3c;
+}

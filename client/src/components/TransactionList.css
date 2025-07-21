@@ -1,0 +1,7 @@
+.transaction-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:35px;
+  padding-top: 100px;
+}

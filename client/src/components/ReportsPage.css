@@ -1,0 +1,111 @@
+/* ReportsPage.css */
+
+/* Container */
+.reports-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Section Headings */
+.reports-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #06b6d4;
+  padding-bottom: 0.5rem;
+}
+
+/* Date filters */
+.report-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.report-filters label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.report-filters input[type="date"] {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tables */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+.report-table th,
+.report-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+.report-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+}
+.report-table tr:nth-child(even) td {
+  background-color: #fafbfc;
+}
+
+/* Quarterly & Monthly Sections */
+.report-section {
+  margin-bottom: 3rem;
+}
+.report-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+/* Category breakdown list */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.category-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.category-list li:nth-child(even) {
+  background-color: #fafbfc;
+}
+.category-list .category-name {
+  font-weight: 500;
+}
+.category-list .category-amount {
+  font-weight: 700;
+  color: #dc2626; /* red for expense */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .report-filters {
+    flex-direction: column;
+  }
+  .report-table th,
+  .report-table td {
+    padding: 0.5rem;
+  }
+  .reports-container {
+    padding: 0 0.5rem;
+  }
+}
+
+.content-area{
+    margin-top: 140px;
+}
+.reports-page{
+  margin-top: 820px;
+}
